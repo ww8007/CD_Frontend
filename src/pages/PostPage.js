@@ -4,7 +4,6 @@ import PostCommentContainer from "../containers/post/PostCommentContainer";
 
 import PostViewerContainer from "../containers/post/PostViewerContainer";
 import PaginationContainer from "../containers/posts/PaginationContainer";
-import PostListContainer from "../containers/posts/PostListContainer";
 
 const PostPage = () => {
   return (
@@ -12,7 +11,7 @@ const PostPage = () => {
       <HeaderContainer />
       <PostViewerContainer />
       <PostCommentContainer />
-      <PostListContainer />
+
       <PaginationContainer />
     </>
   );
