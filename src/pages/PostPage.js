@@ -11,7 +11,6 @@ const PostPage = () => {
       <HeaderContainer />
       <PostViewerContainer />
       <PostCommentContainer />
-
       <PaginationContainer />
     </>
   );
