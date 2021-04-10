@@ -11,3 +11,7 @@ https://ww8007.github.io/CD_Frontend/#/
 
 1. redux-saga
 1. axios
+
+### 깃허브 페이지에 등록
+
+npm run deploy
