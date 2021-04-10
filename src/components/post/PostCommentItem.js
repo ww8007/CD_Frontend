@@ -81,8 +81,8 @@ const PostCommentItem = ({
   const [out, setOut] = useState(false);
   const { writeAt, content } = comment.fields;
   const { username } = comment.fields.author.fields;
+  const { nickname } = comment.fields.author.fields;
   const { pk } = comment;
-
 
   //  const { content } = recommentList.fields;
 
@@ -121,7 +121,7 @@ const PostCommentItem = ({
         <>
           {/* 댓글 정보 */}
           <div>
-            Date: {postDate[0]} username: {username}
+            Date: {postDate[0]} Nickname: {nickname}
           </div>
           <hr />
           {/* 댓글 수정 부 form 으로 구현  */}

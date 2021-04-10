@@ -108,7 +108,7 @@ const PostViewer = ({
   const { title, content, writeAt } = _data.fields;
   let postDate = writeAt.split("T");
   ownPost(_data.fields.author.fields.username);
-  let post_id = _data.fields.author.fields.username;
+  let post_id = _data.fields.author.fields.nickname;
 
   return (
     <PostViewerBlock>

@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import palette from '../../lib/styles/palette';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import palette from "../../lib/styles/palette";
+import { Link } from "react-router-dom";
 // 페이지 레이아웃 담당
 
 // 화면 전체 채움
@@ -40,7 +40,7 @@ const AuthTemplate = ({ children }) => {
     <AuthTemplateBlock>
       <WitheBox>
         <div className="logo-area">
-          <Link to="/board/1">REACTERS</Link>
+          <Link to="/board/1">C&D</Link>
         </div>
         {children}
       </WitheBox>

@@ -72,7 +72,7 @@ const PostItemBlock = styled.div`
 
 const PostItem = ({ post }) => {
   const { reply_length } = post;
-  const { username } = post.fields.author.fields;
+  const { nickname } = post.fields.author.fields;
 
   const { title, writeAt } = post.fields;
 
@@ -86,7 +86,7 @@ const PostItem = ({ post }) => {
 
       <p>
         <Link to={`/board/post/${post.pk}`}>
-          작성자 : {username}, 작성일 : {postDate[0]}
+          작성자 : {nickname}, 작성일 : {postDate[0]}
         </Link>
       </p>
 
