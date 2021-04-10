@@ -11,3 +11,7 @@ https://main.dsldzi7yu0zyw.amplifyapp.com/#/
 
 1. redux-saga
 1. axios
+
+### 깃허브 페이지에 등록
+
+npm run deploy

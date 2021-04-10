@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { withRouter } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import PostListUnderComment from "../../components/post/PostListUnderComment";
-import { listPosts } from "../../modules/posts";
 
 const PostListContainerComment = () => {
-  const dispatch = useDispatch();
   const { posts, error, loading, user, data, post, postsdata } = useSelector(
     ({ posts, loading, user, post }) => ({
       posts: posts.posts,
@@ -39,21 +37,6 @@ const PostListContainerComment = () => {
     start = start.toString().replace(/"/g, "");
     end = end.toString().replace(/"/g, "");
   }
-  useEffect(() => {
-    let id;
-    if (id === undefined) {
-      id = 1;
-    }
-    localStorage.setItem("id", id);
-    let diff = localStorage.getItem("id");
-    diff = diff.toString().replace(/"/g, "");
-    if (diff !== id) {
-      localStorage.setItem("start", 0);
-      localStorage.setItem("end", 10);
-    }
-
-    dispatch(listPosts({ id, start, end }));
-  }, [dispatch, end, start]);
 
   return (
     <PostListUnderComment
